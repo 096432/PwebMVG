@@ -1,0 +1,353 @@
+/********** Template CSS **********/
+:root {
+    --primary: #F9F6F4;
+    --light: #F9F6F4;
+    --dark: #222B2D;
+}
+
+
+
+/*** Spinner ***/
+
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 15px;
+    bottom: 15px;
+    z-index: 99;
+    background-color: #374760;
+    color: #F9F6F4;
+    border-radius: 15px;
+    padding: 13px 15px;
+    transition: all 0.4s;
+}
+.back-to-top:hover {
+  background: #293959;
+  color: #F9F6F4;
+}
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.bolita {
+    background-color: #293959;
+    color: #F9F6F4;
+    padding: 12px;
+    border-radius: 15px;
+}
+
+.mb-0{
+    color: #293959;
+    font-weight: 500 !important;
+}
+
+.my-6 {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+
+.py-6 {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+.py-0 {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+@media (max-width: 991.98px) {
+    .mb-3 {
+        padding: 0rem 0 0rem 0;
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+
+
+@media (max-width: 991.98px) {
+    .py-6 {
+        padding: 0rem 0 0rem 0;
+        text-align: center;
+    }
+}
+
+
+
+body{
+    width: 100%;
+    background-color: #F9F6F4;
+    font-family: 'Quicksand', sans-serif;
+}
+
+p{
+    font-family: 'Quicksand', sans-serif;
+    color: #293959;
+}
+
+/*** Heading ***/
+h1,
+h2,
+.fw-bold {
+    font-family: 'Quicksand', sans-serif;
+    color: #293959;
+    font-weight: 700 !important;
+   
+}
+
+h3,
+h4,
+.fw-semi-bold {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600 !important;
+    color: #293959;
+}
+
+h5,
+h6,
+.fw-medium {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400 !important;
+    color: #293959;
+}
+
+
+
+
+/*** Button ***/
+.btn{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500 !important;
+    font-size: 18px;
+
+}
+.btn:link,
+.btn:visited {
+  
+    color: #F9F6F4;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: absolute;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    font-family: 'Quicksand', sans-serif;
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    font-family: 'Quicksand', sans-serif;
+}
+
+.btn-white {
+    background-color: #293959;
+    color: #F9F6F4;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    color: #F9F6F4;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.btn-white::after {
+    background-color: #293959;
+    color: #F9F6F4;
+    font-family: 'Quicksand', sans-serif;
+
+}
+
+.btn:hover::after {
+    color: #F9F6F4;
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.btn-animated {
+    animation: moveInBottom 5s ease-out;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+
+
+
+/*** Hero Header ***/
+.hero-header {
+    padding-top: 4rem;
+    padding-bottom: 3rem; 
+    font-family: 'Quicksand', sans-serif;
+   
+}
+
+.categorias {
+    padding-top: 0rem;
+    padding-bottom: 3rem; 
+    font-family: 'Quicksand', sans-serif;
+   
+}
+
+
+
+@media (max-width: 991.98px) {
+    .hero-header {
+        padding: 4rem 0 0rem 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .categorias {
+        padding: 4rem 0 3rem 0;
+        text-align: center;
+    }
+}
+
+
+
+
+
+/*** Footer ***/
+.footer {
+    margin-top: 3rem;
+    padding-top: 0rem;
+}
+
+.footer .btn.btn-social {
+    margin-right: 5px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: ;
+    color: var(--light);
+    border: 1px solid #858585;
+    border-radius: 40px;
+    transition: .3s;
+}
+
+.footer .btn.btn-social:hover {
+    color: var(--primary);
+    border-color: var(--light);
+}
+
+.footer .btn.btn-link {
+    display: block;
+    margin-bottom: 10px;
+    padding: 0;
+    text-align: left;
+    color: #858585;
+    font-weight: normal;
+    transition: .3s;
+}
+
+.footer .btn.btn-link::before {
+    position: relative;
+    content: "\f105";
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 900;
+    margin-right: 0px;
+}
+
+.footer .btn.btn-link:hover {
+    letter-spacing: 1px;
+    box-shadow: none;
+    color: var(--light);
+}
+
+.footer .copyright {
+    font-family: 'Quicksand', sans-serif;
+    padding: 25px 0;
+    border-top: 1px solid rgba(256, 256, 256, .1);
+}
+
+.footer .copyright a {
+    color: var(--light);
+}
+
+.footer .footer-menu a {
+    font-family: 'Quicksand', sans-serif;
+    margin-right: 15px;
+    padding-right: 15px;
+    border-right: 1px solid rgba(255, 255, 255, .1);
+}
+
+.footer .footer-menu a:last-child {
+    margin-right: 0;
+    padding-right: 0;
+    border-right: none;
+}
+
+.footer .copyright a:hover,
+.footer .footer-menu a:hover {
+    color: var(--secondary);
+}
+
+/*** Testimonial ***/
+.testimonial-carousel .testimonial-item {
+    padding: 0 30px 30px 30px;
+}
+
+.testimonial-carousel .owl-nav {
+    display: flex;
+    justify-content: center;
+}
+
+.testimonial-carousel .owl-nav .owl-prev,
+.testimonial-carousel .owl-nav .owl-next {
+    margin: 0 12px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary);
+    background: var(--light);
+    border-radius: 60px;
+    font-size: 22px;
+    transition: .5s;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.testimonial-carousel .owl-nav .owl-prev:hover,
+.testimonial-carousel .owl-nav .owl-next:hover {
+    color: #FFFFFF;
+    background: var(--primary);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
+
+/*** Contenido oculto para el futuro ***/
+
